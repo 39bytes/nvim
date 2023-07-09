@@ -12,6 +12,7 @@ return {
     opts = {
       defaults = {
         layout_strategy = "horizontal",
+        sorting_strategy = "ascending",
         file_ignore_patterns = { ".ipynb", "node_modules", ".git" },
         path_display = { "smart" },
       },
