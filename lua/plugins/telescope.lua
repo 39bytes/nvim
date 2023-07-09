@@ -12,7 +12,7 @@ return {
     opts = {
       defaults = {
         layout_strategy = "horizontal",
-        file_ignore_patterns = { ".ipynb" },
+        file_ignore_patterns = { ".ipynb", "node_modules", ".git" },
         path_display = { "smart" },
       },
       pickers = {
