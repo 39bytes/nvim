@@ -10,8 +10,13 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- Trouble
 map("n", "<leader>xx", "<cmd>TroubleToggle<cr>")
 map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>")
 map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>")
 map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>")
 map("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>")
+
+-- Renamer
+map("n", "<leader>rn", "<cmd>lua require('renamer').rename()<cr>")
+map("v", "<leader>rn", "<cmd>lua require('renamer').rename()<cr>")
