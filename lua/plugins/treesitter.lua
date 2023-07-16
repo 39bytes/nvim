@@ -18,5 +18,6 @@ return {
       "vim",
       "yaml",
     },
+    autotag = { enable = true },
   },
 }
