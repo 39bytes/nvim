@@ -4,6 +4,7 @@ return {
     ensure_installed = {
       "astro",
       "bash",
+      "haskell",
       "html",
       "javascript",
       "json",
