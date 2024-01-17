@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   command = "setlocal shiftwidth=4 tabstop=4 expandtab",
 })
 
-vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = "*.rs",
-  command = "setlocal shiftwidth=2 tabstop=2 expandtab",
-})
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = "*.rs",
+--   command = "setlocal shiftwidth=2 tabstop=2 expandtab",
+-- })
