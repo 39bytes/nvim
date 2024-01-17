@@ -16,3 +16,8 @@ map("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>")
 map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>")
 map("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>")
 map("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>")
+
+-- TypescriptTools
+map("n", "<leader>mi", "<cmd>TSToolsAddMissingImports<cr>")
+map("n", "<leader>mo", "<cmd>TSToolsOrganizeImports<cr>")
+map("n", "<leader>mr", "<cmd>TSToolsRenameFile<cr>")
