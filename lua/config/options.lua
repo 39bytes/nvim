@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 -- vim.g.rust_recommended_style = false
+vim.g.root_spec = { "cwd" }
