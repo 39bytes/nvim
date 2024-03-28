@@ -41,4 +41,14 @@ return {
       end,
     },
   },
+
+  {
+    "telescope.nvim",
+    dependencies = {
+      "fannheyward/telescope-coc.nvim",
+      config = function()
+        require("telescope").load_extension("coc")
+      end,
+    },
+  },
 }

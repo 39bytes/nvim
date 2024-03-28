@@ -24,6 +24,12 @@ return {
       tsserver = function(_, opts)
         return true
       end,
+      eslint = function(_, opts)
+        return true
+      end,
+      tailwindcss = function(_, opts)
+        return true
+      end,
     },
   },
 }
