@@ -4,6 +4,7 @@ return {
   config = function()
     require('toggleterm').setup {
       open_mapping = [[<C-\>]],
+      shell = '/usr/bin/fish',
     }
   end,
 }
