@@ -198,6 +198,7 @@ return { -- LSP Configuration & Plugins
           require('lspconfig')[server_name].setup(server)
         end,
         ['tsserver'] = function() end,
+        ['rust_analyzer'] = function() end,
       },
     }
   end,
