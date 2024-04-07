@@ -10,8 +10,8 @@ return {
   config = function()
     require('neo-tree').setup {
       window = {
-        width = 20,
-        side = 'left',
+        width = 25,
+        position = 'right',
         auto_expand_width = true,
       },
     }
