@@ -4,7 +4,7 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-s>', '<cmd>w<CR>')
 vim.keymap.set('n', '<leader>qq', '<cmd>qa<CR>', { desc = 'Quit [A]ll' })
 
 -- Buffers
-vim.keymap.set('n', '<leader>bd', '<cmd>bd<CR>', { desc = '[B]uffer [D]elete' })
+vim.keymap.set('n', '<leader>bd', '<cmd>bp|bd #<CR>', { desc = '[B]uffer [D]elete' })
 vim.keymap.set('n', '<leader>ba', '<cmd>%bd|e#|bd#<CR>', { desc = '[B]uffer delete [A]ll' })
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
