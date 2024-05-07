@@ -153,7 +153,6 @@ return { -- LSP Configuration & Plugins
       -- But for many setups, the LSP (`tsserver`) will work just fine
       -- tsserver = {},
       --
-
       lua_ls = {
         -- cmd = {...},
         -- filetypes = { ...},
@@ -165,6 +164,13 @@ return { -- LSP Configuration & Plugins
             },
             -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
             -- diagnostics = { disable = { 'missing-fields' } },
+          },
+        },
+      },
+      basedpyright = {
+        settings = {
+          basedpyright = {
+            typeCheckingMode = 'standard',
           },
         },
       },
