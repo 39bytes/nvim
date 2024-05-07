@@ -24,6 +24,7 @@ return { -- Autoformat
       typescript = { 'prettierd' },
       typescriptreact = { 'prettierd' },
       astro = { 'prettierd' },
+      python = { 'ruff_format' },
     },
   },
 }
