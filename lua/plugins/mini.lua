@@ -16,6 +16,15 @@ return { -- Collection of various small independent plugins/modules
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require('mini.surround').setup()
 
+    require('mini.files').setup()
+
+    vim.keymap.set({ 'n' }, '<leader>fe', function()
+      require('mini.files').open()
+    end)
+    vim.keymap.set({ 'n' }, '<leader>fc', function()
+      require('mini.files').open(vim.api.nvim_buf_get_name(0))
+    end)
+
     -- -- Simple and easy statusline.
     -- --  You could remove this setup call if you don't like it,
     -- --  and try some other statusline plugin
