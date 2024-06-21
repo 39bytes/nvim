@@ -10,8 +10,6 @@ vim.g.have_nerd_font = true
 -- Force telescope/nvim tree to always use cwd as the root
 vim.g.root_spec = { 'cwd' }
 
-vim.opt.shell = '/usr/bin/zsh'
-
 require 'options'
 
 require 'keymaps'
