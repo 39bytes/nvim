@@ -50,4 +50,6 @@ require('lazy').setup({
       lazy = '💤 ',
     },
   },
+  
+  lockfile = os.getenv 'HOME' .. 'nixos/dotfiles/nvim/lazy-lock.json',
 })
