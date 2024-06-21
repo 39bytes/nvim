@@ -16,13 +16,17 @@ return { -- Collection of various small independent plugins/modules
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require('mini.surround').setup()
 
-    require('mini.files').setup()
+    require('mini.files').setup {
+      options = {
+        use_as_default_explorer = false,
+      },
+    }
 
     vim.keymap.set({ 'n' }, '<leader>fe', function()
-      require('mini.files').open()
+      require('mini.files').open(vim.api.nvim_buf_get_name(0))
     end)
     vim.keymap.set({ 'n' }, '<leader>fc', function()
-      require('mini.files').open(vim.api.nvim_buf_get_name(0))
+      require('mini.files').open(nil, false)
     end)
 
     -- -- Simple and easy statusline.
